@@ -1,0 +1,30 @@
+.content {
+    align-items: center;
+}
+.available-job {
+    display: flex;
+    max-width: 95%;
+    width: 900px;
+}
+
+details {
+    margin: 5px 0;
+    background-color: rgb(53, 53, 53);
+    width: 95%;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    user-select: none;
+}
+
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+  }
+  
+  @keyframes sweep {
+    0%    {opacity: 0; margin-left: -10px}
+    100%  {opacity: 1; margin-left: 0px}
+  }
+
+
+  

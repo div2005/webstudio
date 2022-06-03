@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d3c3cf27bd.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/order.css">
+
+    <title>WEB STUDIO | Головна</title>
+</head>
+<body>
+
+    <script src="scripts/header.js"></script>
+    
+    <div class="content">
+      <div class="images-container">
+        <h2>
+          Наша команда
+          <div class="line"></div>
+        </h2>
+
+        <div class="employees images">
+          <section>
+            <img src="assets/user1.jpg" alt="">
+            <span class="name">Олег</span>
+            <span class="position">Директор</span>
+          </section>
+          <section>
+            <img src="assets/user2.webp" alt="">
+            <span class="name">Сергій</span>
+            <span class="position">Розробник</span>
+          </section>
+          <section>
+            <img src="assets/user3.jpg" alt="">
+            <span class="name">Володимир</span>
+            <span class="position">Дизайнер</span>
+          </section>
+        </div>
+      </div>
+
+      <div class="images-container">
+        <h2>
+          Наші роботи
+          <div class="line"></div>
+        </h2> 
+
+        <div class="projects images">
+          <section>
+            <img src="assets/w1.png" alt="">
+            <span>Сайт про кібербезпеку</span>
+          </section>
+          <section>
+            <img src="assets/w2.png" alt="">
+            <span>Персональний сайт</span>
+          </section>
+        </div>
+      </div>
+
+      <div class="technologies">
+        
+        <h2>
+          Ми використовуємо
+          <div class="line"></div>
+        </h2> 
+        
+        <section>
+          <i class="fa-brands fa-html5"></i>
+          <i class="fa-brands fa-css3-alt"></i>
+          <i class="fa-brands fa-sass"></i>
+          <i class="fa-brands fa-node-js"></i>
+          <i class="fa-brands fa-python"></i>
+        </section>
+      </div>
+
+      <div class="maps">
+
+        <h2>
+          Наша геолокація
+          <div class="line"></div>
+        </h2> 
+
+        <section>
+            <iframe src="https://maps.google.com/maps?q=%D0%B2%D1%96%D0%BD%D0%BD%D0%B8%D1%86%D1%8F,%20%D0%BA%D0%BE%D1%81%D0%BC%D0%BE%D0%BD%D0%B0%D0%B2%D1%81%D1%82%D1%96%D0%B2&t=&z=13&ie=UTF8&iwloc=&output=embed">   
+            </iframe>
+        </section>
+        
+      </div>
+
+      </div>
+    </div>
+
+    <footer>
+      <div class="site-name">
+        <img src="assets/logo.png">
+        <span class="name">
+          WEB 
+          <br> 
+          STUDIO</span>
+        <span class="text">
+          Провідна компанія 
+          <br> 
+          в сфері IT
+        </span>
+      </div>
+
+      <div class="contact">
+        <span>
+          <a href="tel:8 800 12 13 14">8 800 12 13 14</a>
+        </span>
+        <span>
+          <i class="fa-brands fa-viber"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-telegram"></i>
+        </span>
+      </div>
+
+      <div class="copyright">
+        <span>
+          © 2022, WEB Studio Company  •  Усі права захищенo.
+        </span>
+        <span>
+          Сайт розроблено на конкурс ITalent
+        </span>
+      </div>
+    </footer>
+
+    
+    <div id="modalBackground" style="display: none;">
+      <div id="orderModal">
+        <div>
+          <h2>Залишити замовлення</h2>
+          <i class="fa-solid fa-xmark" onclick="changeModalStatus()"></i>
+        </div>
+        
+
+        
+  
+        <span>
+          Ваше ім'я
+          <input type="text">
+        </span>
+  
+        <span>
+            Ваш номер телефону
+          <input type="tel">
+        </span>
+  
+        <span>
+          Залиште коментар
+            <input type="text">
+        </span>
+  
+        <span>
+          <a class="buy-button" id="fakeOrderButton" onclick="changeModalStatus()">Замовити сайт</a>
+        </span>
+      </div>
+    </div>
+
+    
+    <script src="scripts/script.js"></script>
+</body>
+</html>

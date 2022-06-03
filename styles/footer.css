@@ -1,0 +1,55 @@
+footer {
+    display: flex;
+    background-color: #272727;
+    color: white;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer > div {
+    margin: 15px 0 ;
+}
+
+footer .site-name {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: 'JetBrains Mono';
+}
+
+footer .site-name img {
+    width: 75px;
+}
+
+footer .name {
+    display: flex;
+    text-align: right;
+    font-size: 150%;
+}
+
+footer .text {
+    border-left: 2px white solid;
+    padding-left: 15px;
+}
+
+footer .copyright {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+footer .contact {
+    display: none;
+}
+
+@media only screen and (max-width: 900px), only screen and (max-device-width: 900px) {
+    footer .contact {
+        font-family: 'JetBrains Mono';
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
